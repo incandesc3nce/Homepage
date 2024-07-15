@@ -71,6 +71,7 @@ h3 {
 
 p {
   font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
 }
 
 .decor {
@@ -179,7 +180,7 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem;
+  grid-gap: 5rem;
   list-style: none;
 }
 
@@ -190,6 +191,7 @@ main {
   color: var(--text-secondary);
 
   max-width: 400px;
+  min-height: 600px;
 
   padding-bottom: 1.2rem;
 }
@@ -235,3 +237,32 @@ main {
   background-position: left;
   object-fit: contain;
 }
+
+footer {
+  color: var(--text-secondary);
+  background-color: var(--decoration);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding: 2rem 3rem;
+}
+
+footer h2 {
+  font-size: var(--heading-size);
+  font-weight: 450;
+  color: var(--text-primary);
+}
+
+.links-footer {
+  display: flex;
+  align-items: center;
+}
+
+.links-footer svg {
+  width: 2.5rem;
+  height: auto;
+
+  fill: var(--text-primary);
+}
+
