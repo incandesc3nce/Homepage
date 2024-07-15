@@ -1,11 +1,13 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('./assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
 }
 
 @font-face {
-  font-family: 'Playfair Display';
-  src: url('./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+  font-family: "Playfair Display";
+  src: url("./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
 }
 
 * {
@@ -43,4 +45,104 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+:root {
+  --background-color: #121212;
+  --text-primary: #fffefe;
+  --text-secondary: #dbe0e6;
+  --background-elevated: #373737;
+  --decoration: #8225a7;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+.decor {
+  position: absolute;
+  width: 120%;
+  height: 50%;
+  background-color: var(--decoration);
+  top: -115px;
+  left: -100px;
+  z-index: -1;
+  rotate: -10deg;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.image {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  max-width: 400px;
+}
+
+.image .name {
+  position: absolute;
+  top: 0px;
+}
+
+.image h1 {
+  color: var(--text-primary);
+  text-shadow: 2px 2px 1px #1a1a1a8a;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.about {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2rem 1rem;
+
+  color: var(--text-secondary);
+  background-color: var(--background-elevated);
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  font-weight: 450;
+  color: var(--text-primary);
+}
+
+.links-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.links-header svg {
+  width: 2.2rem;
+  height: auto;
+
+  fill: var(--text-primary);
 }
