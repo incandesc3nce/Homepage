@@ -147,14 +147,14 @@ p {
 }
 
 .links-header svg {
-  width: 2.5rem;
+  width: 38px;
   height: auto;
 
   fill: var(--text-primary);
 }
 
 #tg {
-  width: 2.9rem;
+  width: 43px;
 }
 
 main {
@@ -194,6 +194,8 @@ main {
   min-height: 600px;
 
   padding-bottom: 1.2rem;
+
+  border-radius: 15px;
 }
 
 .project-info {
@@ -207,6 +209,7 @@ main {
   width: 100%;
   min-height: 310px;
   object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 .project-name {
@@ -227,7 +230,7 @@ main {
 }
 
 .project-links svg {
-  width: 2rem;
+  width: 32px;
   height: auto;
   fill: var(--text-primary);
 }
@@ -260,7 +263,7 @@ footer h2 {
 }
 
 .links-footer svg {
-  width: 2.5rem;
+  width: 38px;
   height: auto;
 
   fill: var(--text-primary);
