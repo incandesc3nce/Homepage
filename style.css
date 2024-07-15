@@ -396,3 +396,22 @@ li:hover,
     opacity: 1;
   }
 }
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  transform: translateX(-20%);
+  filter: blur(3px);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
