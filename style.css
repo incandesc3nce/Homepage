@@ -53,10 +53,13 @@ h6 {
   --text-secondary: #dbe0e6;
   --background-elevated: #373737;
   --decoration: #8225a7;
+
+  --heading-size: 2.5rem;
 }
 
 body {
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 h1,
@@ -72,11 +75,11 @@ p {
 
 .decor {
   position: absolute;
-  width: 120%;
+  width: 105%;
   height: 50%;
   background-color: var(--decoration);
   top: -115px;
-  left: -100px;
+  left: -60px;
   z-index: -1;
   rotate: -10deg;
 }
@@ -110,6 +113,7 @@ p {
   text-shadow: 2px 2px 1px #1a1a1a8a;
   text-align: center;
   letter-spacing: 1px;
+  font-size: var(--heading-size);
 }
 
 .about {
@@ -124,7 +128,7 @@ p {
 }
 
 .about h2 {
-  font-size: 2.5rem;
+  font-size: var(--heading-size);
   font-weight: 450;
   color: var(--text-primary);
 }
@@ -136,13 +140,92 @@ p {
 
 .links {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
   list-style: none;
 }
 
 .links-header svg {
-  width: 2.2rem;
+  width: 2.5rem;
   height: auto;
 
+  fill: var(--text-primary);
+}
+
+#tg {
+  width: 2.9rem;
+}
+
+main {
+  padding: 5rem 0;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 3rem;
+
+  color: var(--text-secondary);
+}
+
+.main-wrapper h2 {
+  font-size: var(--heading-size);
+  font-weight: 450;
+  color: var(--text-primary);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-elevated);
+  color: var(--text-secondary);
+
+  max-width: 400px;
+
+  padding-bottom: 1.2rem;
+}
+
+.project-info {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.project-card img {
+  width: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.project-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-name h3 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-links svg {
+  width: 2rem;
+  height: auto;
   fill: var(--text-primary);
 }
