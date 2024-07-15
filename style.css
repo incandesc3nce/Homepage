@@ -203,7 +203,7 @@ main {
 
 .project-card img {
   width: 100%;
-  min-height: 300px;
+  min-height: 310px;
   object-fit: cover;
 }
 
@@ -228,4 +228,10 @@ main {
   width: 2rem;
   height: auto;
   fill: var(--text-primary);
+}
+
+#battleship,
+#todo {
+  background-position: left;
+  object-fit: contain;
 }
