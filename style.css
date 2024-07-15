@@ -329,3 +329,70 @@ footer h2 {
     object-fit: cover;
   }
 }
+
+
+.project-github, .project-live {
+  transition: all 0.3s ease;
+}
+
+.image {
+  animation: slide-image 1s ease;
+}
+.about {
+  animation: slide-about 1s ease;
+}
+
+li {
+  text-decoration: none;
+  transition: transform 0.3s ease;
+
+  animation: slide-links 1s ease;
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+li:hover,
+.project-github:hover,
+.project-live:hover {
+  transform: translateY(-10px);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+@keyframes slide-about {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-links {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-image {
+  from {
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
